@@ -193,7 +193,7 @@ public class MySQLManager extends SqlManager {
                   loadDataSql.append("@").append(columns[i]).append(", ");
                   break;
                default:
-                  loadDataSql.append(columns[i]).append(", ");
+                  loadDataSql.append("`").append(columns[i]).append("`").append(", ");
                   break;
             }
          }
